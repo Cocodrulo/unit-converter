@@ -7,7 +7,7 @@
 }
 
 body {
-    background: #333;
+    background: linear-gradient(to bottom, #444, #333);
     height: 100svh;
     width: 100vw;
     color: white;
@@ -47,23 +47,35 @@ select {
     border-radius: 5px;
     border: 1px solid black;
     outline: none;
-    background: #555;
+    background: #782929;
     padding: 5px 10px;
     color-scheme: dark;
 }
 
 #wrapper {
-    height: 70svh;
+    height: fit-content;
     width: 30vw;
     display: grid;
     grid-template-areas:
         "header header"
         "main main";
-    background: #555;
+    background: #3a0101;
     grid-template-rows: 19% 81%;
     border: black 2px solid;
     border-radius: 10px;
-    box-shadow: 0 0 10px black;
+    box-shadow: 0 0 50px rgba(255, 0, 0, 0.504);
+
+    @media (min-width: 320px) {
+        width: 90vw;
+    }
+
+    @media (min-width: 641px) {
+        width: 60vw;
+    }
+
+    @media (min-width: 961px) {
+        width: 30vw;
+    }
 }
 
 header {
